@@ -10,4 +10,14 @@ public class WelcomeController {
     public String welcome() {
         return "Welcome to Spring Security JWT OAuth2 Learning Project";
     }
+
+    @GetMapping("/api/hello")
+    public String hello() {
+        return "Hello! JWT authentication successful.";
+    }
+
+    @GetMapping("/api/admin")
+    public String admin() {
+        return "Hello Admin";
+    }
 }
